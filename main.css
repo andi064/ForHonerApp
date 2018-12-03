@@ -1,0 +1,340 @@
+body{
+    background-image: url(/images/overall_background.png);
+    background-position: top;
+    background-attachment: fixed;
+    height: 65vh;
+}
+
+.iconsBig{
+    font-size: 22px;
+}
+
+.aboutTournamentTxt h6{
+    font-weight: 900;
+    text-align: center; 
+}
+
+/*Home Page*/
+
+.homePage{
+    align-content: center;
+    margin-top: 10px;
+    justify-content: center;
+}
+
+.duelT, .brawlT, .breachT{
+margin-top: 20px;
+}
+
+.text_home{
+    border: 13px;
+    background-color:#fdbf08;
+    color: rgb(29, 27, 27);
+    text-align: center;
+    width: 100%;
+    height: auto;
+    margin: auto;
+    padding: 2px;
+    margin-top: 58px;
+}
+
+.duelTournament, .brawlTournament, .breachTournament{
+    width: 250px;
+    height: 100px;
+    border: 1px #fdbf08 solid;
+    align-self: center;
+    margin: auto;
+    border-radius: 10px;
+    font-weight: 900;
+}
+
+.duelTournament{
+    background-image: url(/images/duel.jpg);
+    background-size: 250px 100px;
+}
+
+.brawlTournament{
+    background-image: url(/images/brawl.jpg);
+    background-size: 250px 100px;
+}
+
+.breachTournament{
+    background-image: url(/images/breach.jpg);
+    background-size: 250px 100px;
+}
+ .categoryTxt{
+    border: 13px;
+    border-radius: 20px;
+    background-color:#fdbf08;
+    color: rgb(29, 27, 27);
+    text-align: center;
+    width: 70%;
+    height: auto;
+    margin: auto;
+    padding: 2px;
+ }
+
+ .aboutTournament{
+     display: flex;
+     justify-content: center;
+     margin-top: 20px;
+ }
+ .aboutTournament button{
+    margin-top: 10px;
+    background-color: #fdbf08;
+    color: black;
+    border-radius: 5px;
+ }
+
+
+
+ /*Rules Page*/
+
+.headerImg img{/*applies to every header*/
+    width: 100vw;
+}
+
+.card-header{
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fdbf08;
+    border: none;
+}
+.card-body{
+    color: #fdbf08;
+    background-color: rgba(0, 0, 0, 0.8);
+    border: none;
+}
+
+.acordion{
+    color: #fdbf08;
+    background-color: rgba(0, 0, 0, 0.8);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border: none;
+}
+.btn.btn-warnig{
+color: #fdbf08;
+border: none;
+}
+
+.btn.btn-link.collapsed{
+    color: #fdbf08;
+}
+
+.rules {
+   /* color: #ef6616;*/
+    color: #000;
+    margin-top: 60px;
+    padding-bottom: 50px;
+}
+
+/* Contact Page */
+
+.contactText{
+    
+    background-color: ;
+    border-radius: 10px;
+    width: 90%;
+    height: auto;
+    color: #fdbf08;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 80px;
+    align-items: center;
+}
+
+.userForm{
+    color:#fdbf08;
+}
+
+.formContact{
+    margin-bottom: 20px;
+}
+
+.headerImgContact img{
+    width: 414px;
+}
+
+.buttonContact{
+    display: flex;
+    justify-content: center;
+}
+.buttonContact button{
+    margin-top: 10px;
+    background-color: #fdbf08;
+    color: black;
+    border-radius: 5px;
+}
+
+.buttonForm{
+    margin-top: 10px;
+    color: black;
+}
+
+.buttonForm button{
+    font-size: 20px;
+}
+.formName1, .formName2, .formName3{
+    margin-top: 20px;
+}
+.backgroundVisible{
+ color: #fdbf08;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ margin-top: 10px;
+}
+
+/*Duel Tournament*/
+.duelImage{
+    
+    background-image: url(/images/duel.jpg);
+    width:350px;
+    height:200px ;
+    margin: auto;
+    margin-top: 59px;
+    background-size: 350px 200px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);/* awesome shadow*/
+}
+
+.aboutTournamentTxt{
+    color: #fdbf08;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.tournamentTxt{
+    margin-top: 15px;
+    color: #fdbf08;
+    text-align: justify;
+}
+
+.aboutTournamentButton{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 80px;
+}
+
+.aboutTournamentButton button{
+    background-color: #fdbf08;
+    color: #000;
+}
+
+/*Brawl Tournament*/
+.brawlImage{
+    
+    background-image: url(/images/brawl.jpg);
+    width:350px;
+    height:200px ;
+    margin: auto;
+    margin-top: 59px;
+    background-size: 350px 200px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);/* awesome shadow*/
+}
+
+/*Breach Tournament*/
+.breachImage{
+    
+    background-image: url(/images/breach.jpg);
+    width:350px;
+    height:200px ;
+    margin: auto;
+    margin-top: 59px;
+    background-size: 350px 200px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);/* awesome shadow*/
+}
+
+/*Registration Page*/
+
+.registrationTournament{
+    color: #fdbf08;
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.registrationText{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.formName4{
+    margin-top: 20px;
+    color: #fdbf08;
+    margin-bottom: 20px;
+}
+
+/*Schedule*/
+
+.scheduleMargin{
+    margin-top: 70px;
+}
+
+.scheduleMargin img{
+    width: 50px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border: 1px solid #fdbf08;
+}
+
+.avatarVS{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: baseline;
+    justify-content: space-around;
+}
+
+.brawlMargin{
+    margin-top: -10px;
+}
+.breachMargin{
+    margin-top: 0px;
+}
+
+.imageSize{
+    image-resolution: 20px x 20px;
+    width: 30px;
+    height: auto;
+}
+
+/*Media Html*/
+
+.mediaTournament{
+    color: #fdbf08;
+    margin-top: 55px;
+    font-weight: 900; 
+    text-align: center;
+}
+
+.mediaVideo iframe{
+    width: 150px;
+    height: auto;
+    border: 1px solid #fdbf08;
+    border-radius: 2px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.mediaVideo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.mediaAlign{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.mediaSpacing{
+    margin-top: 10px;
+}
