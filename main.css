@@ -2,11 +2,14 @@ body{
     background-image: url(/images/overall_background.png);
     background-position: top;
     background-attachment: fixed;
-    height: 65vh;
+    height: 85vh;
 }
 
 .iconsBig{
     font-size: 22px;
+    margin: 4px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
 }
 
 .aboutTournamentTxt h6{
@@ -15,7 +18,6 @@ body{
 }
 
 /*Home Page*/
-
 .homePage{
     align-content: center;
     margin-top: 10px;
@@ -86,8 +88,6 @@ margin-top: 20px;
     border-radius: 5px;
  }
 
-
-
  /*Rules Page*/
 
 .headerImg img{/*applies to every header*/
@@ -130,8 +130,6 @@ border: none;
 /* Contact Page */
 
 .contactText{
-    
-    background-color: ;
     border-radius: 10px;
     width: 90%;
     height: auto;
@@ -338,3 +336,86 @@ border: none;
 .mediaSpacing{
     margin-top: 10px;
 }
+
+/*hide every SPA div*/
+
+.mediaHTML, .duelHTML, .brawlHTML, .breachHTML, .playerInfoHTML, .teamDetailsHTML, .rulesHTML, .shceduleHTML, .contactHTML, .signInHTML, .registerHTML, .chatHTML {
+    display: none;
+} 
+
+/*Media Queries*/   
+
+@media only screen and (orientation: landscape) {
+    /*Index*/
+    .iconsBig{
+        font-size: 20px;
+        margin: 4px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+    }
+    .categoryTxt{
+        width: 190px;
+        margin-bottom: 2px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+    .text_home{
+        display: none;
+    }
+    .homePage{
+        display: flex;
+        flex-direction: row;
+        margin-top:80px;
+    }
+
+    .duelTournament, .brawlTournament, .breachTournament{
+    width: 150px;
+    }
+
+    .headerImg img{
+        height: 70px;
+    }
+    /*Rules*/
+    .rules{
+        margin-top: 70px;
+    }
+    /*Schedule*/
+    .headerImgContact img{
+        width: 100%;
+        height: 70px;
+    }
+    .breachMargin{
+        padding-bottom: 50px;
+    }
+    /*Contact*/
+    .contactText{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .landscapeContact{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-right: 15px;
+    }
+    .contactButtonsLandscape{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding-bottom: 60px;
+    }
+    .backgroundVisible{
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+    }
+
+    .backgroundVisible buton{
+        width: 20px;
+    }
+    /*Registration*/
+    .registrationTournament{
+        margin-top: 70px;
+    }
+
+  }
