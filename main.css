@@ -1,36 +1,55 @@
-body{
+/*body {
     background-image: url(/images/overall_background.png);
     background-position: top;
     background-attachment: fixed;
     height: 85vh;
+}*/
+body{ 
+	width: auto; 
+	height: 100%; 
+	background-image: url(/images/overall_background.png);
+	background-position: 0px 0px;
+    background-repeat: repeat-x;
+
+	animation: animatedBackground 60s linear infinite;
+}
+.backgroundPlayers{
+    overflow-y: scroll;
+    height: 92vh;
+}
+@keyframes animatedBackground {
+	from { background-position: 0 0; }
+	to { background-position: 100% 0; }
 }
 
-.iconsBig{
+.iconsBig {
     font-size: 22px;
     margin: 4px;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
 }
 
-.aboutTournamentTxt h6{
+.aboutTournamentTxt h6 {
     font-weight: 900;
-    text-align: center; 
+    text-align: center;
 }
 
 /*Home Page*/
-.homePage{
+.homePage {
     align-content: center;
     margin-top: 10px;
     justify-content: center;
 }
 
-.duelT, .brawlT, .breachT{
-margin-top: 20px;
+.duelT,
+.brawlT,
+.breachT {
+    margin-top: 20px;
 }
 
-.text_home{
+.text_home {
     border: 13px;
-    background-color:#fdbf08;
+    background-color: #fdbf08;
     color: rgb(29, 27, 27);
     text-align: center;
     width: 100%;
@@ -40,7 +59,9 @@ margin-top: 20px;
     margin-top: 58px;
 }
 
-.duelTournament, .brawlTournament, .breachTournament{
+.duelTournament,
+.brawlTournament,
+.breachTournament {
     width: 250px;
     height: 100px;
     border: 1px #fdbf08 solid;
@@ -50,78 +71,89 @@ margin-top: 20px;
     font-weight: 900;
 }
 
-.duelTournament{
+.duelTournament {
     background-image: url(/images/duel.jpg);
     background-size: 250px 100px;
 }
 
-.brawlTournament{
+.brawlTournament {
     background-image: url(/images/brawl.jpg);
     background-size: 250px 100px;
 }
 
-.breachTournament{
+.breachTournament {
     background-image: url(/images/breach.jpg);
     background-size: 250px 100px;
 }
- .categoryTxt{
+
+.categoryTxt {
     border: 13px;
     border-radius: 20px;
-    background-color:#fdbf08;
+    background-color: #fdbf08;
     color: rgb(29, 27, 27);
     text-align: center;
     width: 70%;
     height: auto;
     margin: auto;
     padding: 2px;
- }
+}
 
- .aboutTournament{
-     display: flex;
-     justify-content: center;
-     margin-top: 20px;
- }
- .aboutTournament button{
+.aboutTournament {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.aboutTournament button {
     margin-top: 10px;
     background-color: #fdbf08;
     color: black;
     border-radius: 5px;
- }
+}
 
- /*Rules Page*/
+.buttonsIndex{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
 
-.headerImg img{/*applies to every header*/
+/*Rules Page*/
+
+.headerImg img {
+    /*applies to every header*/
     width: 100vw;
 }
 
-.card-header{
+.card-header {
     background-color: rgba(0, 0, 0, 0.8);
     color: #fdbf08;
     border: none;
 }
-.card-body{
+
+.card-body {
     color: #fdbf08;
     background-color: rgba(0, 0, 0, 0.8);
     border: none;
 }
 
-.acordion{
+.acordion {
     color: #fdbf08;
     background-color: rgba(0, 0, 0, 0.8);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     border: none;
 }
-.btn.btn-warnig{
-color: #fdbf08;
-border: none;
+
+.btn.btn-warnig {
+    color: #fdbf08;
+    border: none;
 }
 
-.btn.btn-link.collapsed{
+.btn.btn-link.collapsed {
     color: #fdbf08;
 }
 
 .rules {
-   /* color: #ef6616;*/
+    /* color: #ef6616;*/
     color: #000;
     margin-top: 60px;
     padding-bottom: 50px;
@@ -129,7 +161,7 @@ border: none;
 
 /* Contact Page */
 
-.contactText{
+.contactText {
     border-radius: 10px;
     width: 90%;
     height: auto;
@@ -141,113 +173,162 @@ border: none;
     align-items: center;
 }
 
-.userForm{
-    color:#fdbf08;
+.userForm {
+    color: #fdbf08;
 }
 
-.formContact{
+.formContact {
     margin-bottom: 20px;
 }
 
-.headerImgContact img{
+.headerImgContact img {
     width: 414px;
 }
 
-.buttonContact{
+.buttonContact {
     display: flex;
     justify-content: center;
 }
-.buttonContact button{
+
+.buttonContact button {
     margin-top: 10px;
     background-color: #fdbf08;
     color: black;
     border-radius: 5px;
 }
 
-.buttonForm{
+.buttonForm {
     margin-top: 10px;
     color: black;
 }
 
-.buttonForm button{
+.buttonForm button {
     font-size: 20px;
 }
-.formName1, .formName2, .formName3{
+
+.formName1,
+.formName2,
+.formName3 {
     margin-top: 20px;
 }
-.backgroundVisible{
- color: #fdbf08;
- display: flex;
- flex-direction: column;
- align-items: center;
- margin-top: 10px;
+
+.backgroundVisible {
+    color: #fdbf08;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+}
+
+/*PlayersInfo 2*/
+
+.backButton{
+    position: sticky;
+    margin-top: 70px;
+    font-size: 25px;
+    color: #fdbf08;
+    background-color: rgba(0, 0, 0, 0.59) ;
+    padding: 5px;
+}
+
+/*Login and registration*/
+
+.signInIcons{
+    font-size: 35px;
+}
+
+
+.positionSignin{
+    display: flex;
+    flex-direction: column;
+}
+
+.loginPosition{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.59);
+    padding-top: 10px;
+    border: 1px solid #fdbf08;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+.fuckingFlex{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 /*Duel Tournament*/
-.duelImage{
-    
+.duelImage {
+
     background-image: url(/images/duel.jpg);
-    width:350px;
-    height:200px ;
+    width: 350px;
+    height: 200px;
     margin: auto;
     margin-top: 59px;
     background-size: 350px 200px;
     border-radius: 5px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);/* awesome shadow*/
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    /* awesome shadow*/
 }
 
-.aboutTournamentTxt{
+.aboutTournamentTxt {
     color: #fdbf08;
     margin-top: 10px;
     text-align: center;
 }
 
-.tournamentTxt{
+.tournamentTxt {
     margin-top: 15px;
     color: #fdbf08;
     text-align: justify;
 }
 
-.aboutTournamentButton{
+.aboutTournamentButton {
     display: flex;
     justify-content: center;
     padding-bottom: 80px;
 }
 
-.aboutTournamentButton button{
+.aboutTournamentButton button {
     background-color: #fdbf08;
     color: #000;
 }
 
 /*Brawl Tournament*/
-.brawlImage{
-    
+.brawlImage {
+
     background-image: url(/images/brawl.jpg);
-    width:350px;
-    height:200px ;
+    width: 350px;
+    height: 200px;
     margin: auto;
     margin-top: 59px;
     background-size: 350px 200px;
     border-radius: 5px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);/* awesome shadow*/
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    /* awesome shadow*/
 }
 
 /*Breach Tournament*/
-.breachImage{
-    
+.breachImage {
+
     background-image: url(/images/breach.jpg);
-    width:350px;
-    height:200px ;
+    width: 350px;
+    height: 200px;
     margin: auto;
     margin-top: 59px;
     background-size: 350px 200px;
     border-radius: 5px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);/* awesome shadow*/
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    /* awesome shadow*/
 }
 
 /*Registration Page*/
 
-.registrationTournament{
+.registrationTournament {
     color: #fdbf08;
     margin-top: 60px;
     display: flex;
@@ -256,14 +337,14 @@ border: none;
 
 }
 
-.registrationText{
+.registrationText {
     margin-top: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.formName4{
+.formName4 {
     margin-top: 20px;
     color: #fdbf08;
     margin-bottom: 20px;
@@ -271,18 +352,18 @@ border: none;
 
 /*Schedule*/
 
-.scheduleMargin{
+.scheduleMargin {
     margin-top: 70px;
 }
 
-.scheduleMargin img{
+.scheduleMargin img {
     width: 50px;
     border-radius: 10px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     border: 1px solid #fdbf08;
 }
 
-.avatarVS{
+.avatarVS {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -290,14 +371,15 @@ border: none;
     justify-content: space-around;
 }
 
-.brawlMargin{
+.brawlMargin {
     margin-top: -10px;
 }
-.breachMargin{
+
+.breachMargin {
     margin-top: 0px;
 }
 
-.imageSize{
+.imageSize {
     image-resolution: 20px x 20px;
     width: 30px;
     height: auto;
@@ -305,14 +387,14 @@ border: none;
 
 /*Media Html*/
 
-.mediaTournament{
+.mediaTournament {
     color: #fdbf08;
     margin-top: 55px;
-    font-weight: 900; 
+    font-weight: 900;
     text-align: center;
 }
 
-.mediaVideo iframe{
+.mediaVideo iframe {
     width: 150px;
     height: auto;
     border: 1px solid #fdbf08;
@@ -320,102 +402,256 @@ border: none;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.mediaVideo{
+.mediaVideo {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 10px;
 }
 
-.mediaAlign{
+.mediaAlign {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
 }
 
-.mediaSpacing{
+.mediaSpacing {
     margin-top: 10px;
 }
 
+/*Team Details*/
+.mainDivTeam {
+    margin-top: 70px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    align-content: center;
+}
+
+.team1 {
+    border: 1px #fdbf08 solid;
+    padding: 8px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width: 180px;
+    margin-top: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.teamImage img {
+    width: 150px;
+    height: 150px;
+    border-radius: 110px;
+}
+
+.teamImage {
+    display: flex;
+    justify-content: center;
+}
+
+/*Players Details*/
+.playerDiv {
+    border: #fdbf08 solid 1px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 3px;
+    margin-top: 60px;
+}
+
+.playerimg {
+    margin-top: 20px;
+    margin-left: 8px;
+}
+
+.playerimg img {
+    width: 120px;
+    height: 150px;
+    border-radius: 130px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.detailsPl {
+    display: flex;
+    flex-direction: column;
+    text-justify: auto;
+    margin-left: 40px;
+    margin-top: 10px;
+}
+
+.detailsPl p {
+    color: #fdbf08;
+}
+
+.playerimg p{
+    color: #fdbf08;
+    text-align: center;
+}
+
+
+
 /*hide every SPA div*/
+/*.page {/*
+   /*activate when using js fn*/
+/*} */
+/*/.active{/*
+ /*   display: block;*/
+/*}*/
 
-.mediaHTML, .duelHTML, .brawlHTML, .breachHTML, .playerInfoHTML, .teamDetailsHTML, .rulesHTML, .shceduleHTML, .contactHTML, .signInHTML, .registerHTML, .chatHTML {
-    display: none;
-} 
-
-/*Media Queries*/   
+/*Media Queries*/
 
 @media only screen and (orientation: landscape) {
+
     /*Index*/
-    .iconsBig{
+    .iconsBig {
         font-size: 20px;
         margin: 4px;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
     }
-    .categoryTxt{
+
+    .categoryTxt {
         width: 190px;
         margin-bottom: 2px;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     }
-    .text_home{
+
+    .text_home {
         display: none;
     }
-    .homePage{
+
+    .homePage {
         display: flex;
         flex-direction: row;
-        margin-top:80px;
+        margin-top: 80px;
     }
 
-    .duelTournament, .brawlTournament, .breachTournament{
-    width: 150px;
+    .duelTournament,
+    .brawlTournament,
+    .breachTournament {
+        width: 150px;
     }
 
-    .headerImg img{
+    .headerImg img {
         height: 70px;
     }
+
     /*Rules*/
-    .rules{
+    .rules {
         margin-top: 70px;
     }
+
     /*Schedule*/
-    .headerImgContact img{
+    .headerImgContact img {
         width: 100%;
         height: 70px;
     }
-    .breachMargin{
+
+    .breachMargin {
         padding-bottom: 50px;
     }
+
     /*Contact*/
-    .contactText{
+    .contactText {
         display: flex;
         flex-direction: row;
         justify-content: space-around;
     }
-    .landscapeContact{
+
+    .landscapeContact {
         display: flex;
         flex-direction: column;
         align-items: center;
         margin-right: 15px;
     }
-    .contactButtonsLandscape{
+
+    .contactButtonsLandscape {
         display: flex;
         flex-direction: row;
         justify-content: space-around;
         padding-bottom: 60px;
     }
-    .backgroundVisible{
+
+    .backgroundVisible {
         display: flex;
         flex-direction: column;
         align-content: center;
     }
 
-    .backgroundVisible buton{
+    .backgroundVisible buton {
         width: 20px;
     }
+
     /*Registration*/
-    .registrationTournament{
+    .registrationTournament {
         margin-top: 70px;
     }
 
-  }
+    /* Media */
+    .mediaTournament{
+        margin-top: 50px;
+        padding-bottom: 60px;
+    }
+}
+
+/*End of Mediaqueries*/
+
+a:not([href]):not([tabindex]){
+    color: #575f67;
+}
+
+a:not([href]):not([tabindex]):hover{
+    color: #fdbf08;
+}
+
+/* Chat */
+
+.fuckingChat{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 85px;
+    background-color: rgba(0, 0, 0, 0.19);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #fdbf08;
+}
+
+.fuckingChat input{
+    width: 300px;
+}
+
+.signOut{
+    position: fixed;
+    margin-top: 10px;
+    margin-left: 330px;
+}
+
+.signOut i{
+    font-size: 35px;
+    color: #fdbf08;
+}
+
+.chat{
+    margin-top: 65px;
+    height: 72vh;
+    overflow-y: scroll;
+    color: #fdbf08;
+    background: rgba(0, 0, 0, 0.39);
+    border-radius: 10px;
+}
+
+#posts div{
+    font-size: 19px;
+    margin-left: 30px;
+    margin-bottom: 10px;
+}
+
+.backButton{
+    position: fixed;
+    margin-bottom: 100px;
+}
